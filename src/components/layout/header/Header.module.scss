@@ -1,0 +1,202 @@
+.Header {
+  padding: 15px 0;
+  background-color: black;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        &:hover {
+          border: 1px solid white;
+          border-radius: 50%;
+        }
+      }
+      svg {
+        width: 55px;
+        height: 55px;
+      }
+    }
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .btn {
+      border-radius: 50%;
+      cursor: pointer;
+      width: 70px;
+      height: 70px;
+      font-size: 16px;
+      background: rgba(128, 128, 128, 0.364);
+      border: 2px solid black;
+      &:hover {
+        border: 2px solid rgba(97, 96, 96, 0.364);
+      }
+      svg {
+        font-size: 16px;
+        color: #fff;
+        width: 45px;
+        height: 45px;
+      }
+    }
+    .clos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 17px;
+      width: 47px;
+      svg {
+        color: gray;
+        font-size: 30px;
+      }
+    }
+    .file {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 17px;
+      .dev {
+        width: 1px;
+        height: 36px;
+        background: gray;
+      }
+    }
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    button {
+      border: none;
+    }
+
+    .input {
+      width: 520px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: 1px solid rgba(128, 128, 128, 0.645);
+      background: rgba(128, 128, 128, 0.233);
+      &:hover {
+        border: 3px solid rgba(97, 96, 96, 0.645);
+      }
+      input {
+        width: 380px;
+        height: 35px;
+        border: none;
+        background: transparent;
+        border-radius: 10px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        outline: none;
+      }
+      .ob {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+      }
+    }
+  }
+  .auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    .log {
+      button {
+        padding: 7px 14px;
+        border-radius: 10px;
+        background: rgba(15, 181, 13, 0.839);
+        border: 1px solid gray;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          transition: 0.2s;
+          font-size: 14px;
+        }
+      }
+    }
+    .lego {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      button {
+        border: none;
+        background: transparent;
+        font-size: 24px;
+        color: rgb(169, 167, 167);
+        &:hover {
+          color: #fff;
+          border: 1px solid transparent;
+        }
+      }
+      .legoo {
+        display: flex;
+        gap: 5px;
+        &:hover {
+          border-bottom: 2px solid #fff;
+          color: #fff;
+        }
+        span {
+          font-size: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: rgba(237, 151, 39, 0.273);
+      &:hover {
+        border: 3px solid rgba(235, 140, 15, 0.353);
+      }
+
+      .avto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        background: fuchsia;
+        border-radius: 50%;
+        font-size: 25px;
+      }
+    }
+    .modal {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 25px;
+      top: 120px;
+      width: 430px;
+      height: 370px;
+      border-radius: 5px;
+      background: rgb(39, 38, 38);
+      button {
+        padding: 7px 14px;
+        border-radius: 10px;
+        background: red;
+        border: 1px solid gray;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          transition: 0.2s;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
