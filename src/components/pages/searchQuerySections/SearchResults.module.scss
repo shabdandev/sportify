@@ -1,10 +1,42 @@
 .SearchResults {
   .content {
     .tracks {
+      padding: 50px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+
       .track {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 15px;
+
+        &.active {
+          background: gray;
+          color: #fff;
+        }
         img {
-          width: 300px;
-          height: 300px;
+          width: 320px;
+          height: 320px;
+          border-radius: 15px 15px 0 0;
+        }
+        h2 {
+          font-weight: 300;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 11px;
+            color: greenyellow;
+          }
         }
       }
     }

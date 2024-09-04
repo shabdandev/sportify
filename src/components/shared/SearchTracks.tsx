@@ -21,6 +21,7 @@ const SearchTracks = () => {
         debounceTimeout={300}
         minLength={2}
         value={searchQuery}
+        placeholder="Что хочешь включить?"
         onChange={(e) => {
           setSearchQuery(e.target.value);
         }}

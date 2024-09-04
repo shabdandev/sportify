@@ -2,7 +2,16 @@ import { NextResponse } from "next/server";
 import querystring from "querystring";
 
 export const GET = () => {
-  const scopes = "user-read-private user-read-email";
+  const scopes = [
+    "app-remote-control",
+    "streaming",
+    "user-read-email",
+    "user-read-private",
+    "playlist-read-private",
+    "playlist-read-collaborative",
+    "playlist-modify-private",
+    "playlist-modify-public",
+  ].join(" ");
   const clientId = process.env.SPOTIFY_CLIENT_ID;
   const reditectUri = process.env.SPOTIFY_REDIRECT_URI;
 
